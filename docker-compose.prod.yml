@@ -1,0 +1,16 @@
+version: '3.8'
+services: 
+    music_db_prod:
+        build: .
+        ports: 
+            - "10000:80"
+        restart: "always"
+        volumes: 
+            - ./logs/:/var/log/nginx
+        networks: 
+            flourish:
+                aliases: 
+                    - music_db_prod
+networks:
+    flourish:
+        external: true

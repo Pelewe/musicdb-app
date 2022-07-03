@@ -1,0 +1,7 @@
+{
+    "/search": {
+      "target": "http://cors-anywhere.herokuapp.com/",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }

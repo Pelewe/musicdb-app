@@ -1,0 +1,19 @@
+.bordered{
+    border-bottom: 1px solid #0dcaf0;
+    height: 60px;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
+.track-border{
+    border: 1px solid #0dcaf0;
+}
+
+p,h1,h2,h3,h4,h5,span {
+    color:#ffff !important;
+}
+
+.card-color{
+    background-image: linear-gradient(to right top, #ffffff, #ecf5ff, #c6f0ff, #8ceeff, #3decfb);
+}

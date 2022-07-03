@@ -1,0 +1,24 @@
+<nav class="navbar navbar-light bg-dark">
+  <div class="container">
+    <div class="row w-100">
+      <div class="col-sm-1 d-flex justify-content-center">
+        <span class="avatarDrop ms-5" [matMenuTriggerFor]="menu">
+          <img src="/assets/profile2.svg" alt="" style="width: 55px;height: 55px;border-radius: 50%;">
+        </span>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Profile</button>
+        </mat-menu>
+      </div>
+      <div class="col-lg-4">
+        <div>
+          <input class="form-control form-control-lg" type="text" [formControl]="searchControl"
+            placeholder="Search for Artists, Albums, Tracks..." aria-label=".form-control-lg example">
+        </div>
+      </div>
+      <div class="col-5"></div>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

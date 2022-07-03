@@ -1,0 +1,11 @@
+ <div class="row d-flex">
+    <mat-card class="col-lg-3 shadow-sm p-3 mb-5 bg-body rounded card-color" style="cursor: pointer;" *ngFor="let album of albums;" (click)="viewAlbum(album)">
+         <div><img [src]="album?.cover_medium"></div>
+         <div class="d-flex flex-column">
+            <p><span><h2>{{album?.title}}</h2></span></p>
+
+            <p><span><h2>{{album?.release_date}}</h2></span></p>
+         </div>
+    </mat-card>
+ </div>
+

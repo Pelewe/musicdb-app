@@ -1,0 +1,21 @@
+.card-dark{
+    // --card-container-border-radius: clamp(4px,(var(--column-width,0px) - 32px) * 0.025,8px);
+     -webkit-box-flex: 1;
+     background: #181818;
+     border-radius: calc(var(--card-container-border-radius) + 2px);
+     -ms-flex: 1;
+     flex: 1;
+     isolation: isolate;
+     padding: 16px;
+     position: relative;
+     -webkit-transition: background-color .3s ease;
+     transition: background-color .3s ease;
+     width: 100%;
+ }
+ .dark-background{
+    background: #181818;
+    min-height: 100vh;
+    &p,h1,h2,h3,h4,h5,span {
+        color:#ffff !important;
+    }
+}

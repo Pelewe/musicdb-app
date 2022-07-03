@@ -1,0 +1,17 @@
+.card-dark{
+    // --card-container-border-radius: clamp(4px,(var(--column-width,0px) - 32px) * 0.025,8px);
+     -webkit-box-flex: 1;
+     background: #181818;
+     border-radius: calc(var(--card-container-border-radius) + 2px);
+     -ms-flex: 1;
+     flex: 1;
+     isolation: isolate;
+     padding: 16px;
+     position: relative;
+     -webkit-transition: background-color .3s ease;
+     transition: background-color .3s ease;
+     width: 100%;
+ }
+ .card-color{
+    background-image: linear-gradient(to right top, #ffffff, #ecf5ff, #c6f0ff, #8ceeff, #3decfb);
+}
